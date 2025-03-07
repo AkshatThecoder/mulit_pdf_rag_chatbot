@@ -15,20 +15,20 @@ This project is a **Retrieval-Augmented Generation (RAG)** chatbot that lets you
 | 🚀 Simplified Flow | No manual preprocessing needed — fully handled inside the UI |
 
 ## 💻 How to Run (New Flow)
+
 1. Install requirements:
-```bash
-pip install -r requirements.txt
+```pip install -r `requirements.txt```
 2. Create a .env file in the root with:
-```bash
-GROQ_API_KEY=your-actual-groq-key
-3. Start the chatbot
-```bash
-streamlit run app.py
+```GROQ_API_KEY=your-actual-groq-key```
+3. Start the chatbot:
+```streamlit run app.py```
 4. Upload PDFs directly in the sidebar.
 5. Ask questions in the chat box.
 
 
-## 🗃️ What About old_app.py and ingest.py? 
-File	          Purpose
-old_app.py	The original version, which required you to manually run ingest.py first
-ingest.py	Standalone PDF processor that creates faiss_db — still works if you want to process PDFs outside Streamlit
+##  🗃️ What About old_app.py and ingest.py? 
+
+| File | Purpose |
+|---|---|
+| old_app.py	The original version, which required you to manually run ingest.py first |
+| ingest.py	Standalone PDF processor that creates faiss_db — still works if you want to process PDFs outside Streamlit |
