@@ -1,0 +1,37 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment files
+.env
+.env.*
+
+# Virtual environment folder (if using one locally)
+venv/
+.venv/
+
+# FAISS vectorstore (can regenerate anytime)
+faiss_db/
+
+# macOS system files
+.DS_Store
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+*.bak
+
+# Jupyter Notebook checkpoints (if you ever use notebooks)
+.ipynb_checkpoints/
+
+# Python cache
+*.pyo
+*.pyd
+
+# VSCode settings (optional - if you want to keep these out of Git)
+.vscode/
+
+# Other IDE settings (optional)
+.idea/
