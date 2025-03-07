@@ -30,5 +30,5 @@ This project is a **Retrieval-Augmented Generation (RAG)** chatbot that lets you
 
 | File | Purpose |
 |---|---|
-| old_app.py	The original version, which required you to manually run ingest.py first |
-| ingest.py	Standalone PDF processor that creates faiss_db — still works if you want to process PDFs outside Streamlit |
+| old_app.py | The original version, which required you to manually run ingest.py first |
+| ingest.py	| Standalone PDF processor that creates faiss_db — still works if you want to process PDFs outside Streamlit |
