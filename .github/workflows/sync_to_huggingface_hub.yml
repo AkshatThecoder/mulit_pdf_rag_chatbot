@@ -1,17 +1,20 @@
-name: Sync to Hugging Face hub
+name: Sync to Hugging Face Hub
+
 on:
   push:
     branches: [main]
-    
   workflow_dispatch:
+
 jobs:
   sync-to-hub:
-    runs on: ubuntu-latest
+    runs-on: ubuntu-latest  # Fix: "runs-on" should have a hyphen, not "runs on"
     steps:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - name: Push to hub
+
+      - name: Push to Hugging Face
         env:
-          HF_TOKEN: ${{ secrets. HF_TOKEN }}
-        run: git push https://parzzzival:$HF_TOKEN@huggingface.co/spaces/parzzzival/multi-pdf-rag-chatbot main
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}  # 🔥 Fix: Removed space in `secrets.HF_TOKEN`
+        run: |
+          git push --force https://parzzzival:$HF_TOKEN@huggingface.co/spaces/parzzzival/multi-pdf-rag-chatbot main
