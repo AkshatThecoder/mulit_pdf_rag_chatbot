@@ -7,3 +7,4 @@ sentence-transformers
 PyPDF2
 python-dotenv
 faiss-cpu
+pypdf
